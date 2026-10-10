@@ -36,8 +36,6 @@ out = demo_projection(256, 8, 102);
 
 The demo accepts power-of-two n and 1 <= r <= n, which ensures the binary orthogonal feasible set is nonempty. This restriction belongs to the demo, not to the solver. This is a small usage example, not the paper's complete projection benchmark or a reproduction of its tables.
 
-Validated with MATLAB R2024b. Only base MATLAB is required; there are no Python or external toolbox dependencies. See `help solve_bop_exact_penalty_box` for options and defaults.
-
 ## Use your own objective
 
 Provide a real, finite n-by-r initial matrix and a function that returns a scalar objective and its n-by-r Euclidean gradient. The function must also support being called with just one output.

@@ -66,7 +66,4 @@ end
 Termination does not certify a global minimum, and the solver may terminate without a feasible binary output. Check `out.rounded_feasible` and `out.F_round`. A continuous residual below 1 supplies the sign-rounding certificate discussed in the paper; the implementation also checks rounded feasibility numerically.
 
 The solver disables optional local search by default. The projection demo enables it, matching the current projection experiment configuration. `out.X_sign` and `out.f_sign` retain the result before local search; `out.X_round` and `out.f_round` report the final result.
-
-## Validation
-
-The default demo was run with a clean MATLAB path in R2024b. It terminated with `converged_exact_rounding`, continuous residual approximately `2.718838e-2`, binary residual `0`, and final objective approximately `427.938907`. Runtime depends on hardware. MATLAB dependency analysis identified only the two supplied MATLAB files and base MATLAB.
+ 
